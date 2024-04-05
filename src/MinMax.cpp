@@ -12,10 +12,13 @@ MinMax :: MinMax(){
 
 }
 
+
+
 void MinMax :: Preenche_Vetor(vector<int> &vetor, int tamanho, int min, int max){
 
     random_device rd;
     mt19937 gen(rd());
+
     
     
     uniform_int_distribution<> dis(min, max);
@@ -26,6 +29,7 @@ void MinMax :: Preenche_Vetor(vector<int> &vetor, int tamanho, int min, int max)
     }
 
 
+
 }
 
 void MinMax :: MinMax1(vector<int> &vetor, int max, int min){
@@ -33,12 +37,12 @@ void MinMax :: MinMax1(vector<int> &vetor, int max, int min){
     max = vetor[0], min = vetor[0];
 
     for (vector<int>::size_type i = 0; i < vetor.size(); ++i) {
-    if (vetor[i] > max) {
-        max = vetor[i];
-    }
-    if (vetor[i] < min) {
-        min = vetor[i];
-    }
+        if (vetor[i] > max) {
+            max = vetor[i];
+        }
+        if (vetor[i] < min) {
+            min = vetor[i];
+        }
 }
 
 
@@ -122,7 +126,7 @@ void MinMax :: MedirTempoMinMax1(vector<int> &vetor){
 
     auto elapsed = end - start;
 
-    ofstream arquivo("/home/joaquim/Documents/TrabalhosAEDS/TrabalhoMinMax/Resultados/ResultadosMinMax1.csv", ios::app);
+    ofstream arquivo("Resultados/ResultadosMinMax1.csv", ios::app);
 
     if(!arquivo.is_open()){
         cout << "Erro ao abrir o arquivo!" << endl;
@@ -161,7 +165,7 @@ void MinMax :: MedirTempoMinMax2(vector<int> &vetor){
 
     auto elapsed1 = end1- start1;
 
-    ofstream arquivo("/home/joaquim/Documents/TrabalhosAEDS/TrabalhoMinMax/Resultados/ResultadosMinMax2.csv", ios::app);
+    ofstream arquivo("Resultados/ResultadosMinMax2.csv", ios::app);
 
     if(!arquivo.is_open()){
         cout << "Erro ao abrir o arquivo!" << endl;
@@ -202,7 +206,7 @@ void MinMax :: MedirTempoMinMax3(vector<int> &vetor){
 
     auto elapsed2 = end2- start2;
 
-    ofstream arquivo("/home/joaquim/Documents/TrabalhosAEDS/TrabalhoMinMax/Resultados/ResultadosMinMax3.csv", ios::app);
+    ofstream arquivo("Resultados/ResultadosMinMax3.csv", ios::app);
 
     if(!arquivo.is_open()){
         cout << "Erro ao abrir o arquivo!" << endl;
@@ -265,7 +269,7 @@ void MinMax :: PrintarMinMaxAleatorio(vector<int> &vetor){
 
 void MinMax :: LimparDadosArquivo(){
 
-    ofstream Arquivo("/home/joaquim/Documents/TrabalhosAEDS/TrabalhoMinMax/Resultados/ResultadosMinMax1.csv", ios::trunc);
+    ofstream Arquivo("Resultados/ResultadosMinMax1.csv", ios::trunc);
 
     if(!Arquivo.is_open()){
         cout << "Erro ao abrir o arquivo." << endl;
@@ -276,7 +280,7 @@ void MinMax :: LimparDadosArquivo(){
 
 
 
-    ofstream Arquivo1("/home/joaquim/Documents/TrabalhosAEDS/TrabalhoMinMax/Resultados/ResultadosMinMax2.csv", ios::trunc);
+    ofstream Arquivo1("Resultados/ResultadosMinMax2.csv", ios::trunc);
 
     if(!Arquivo1.is_open()){
         cout << "Erro ao abrir o arquivo." << endl;
@@ -287,7 +291,7 @@ void MinMax :: LimparDadosArquivo(){
 
 
 
-    ofstream Arquivo2("/home/joaquim/Documents/TrabalhosAEDS/TrabalhoMinMax/Resultados/ResultadosMinMax3.csv", ios::trunc);
+    ofstream Arquivo2("Resultados/ResultadosMinMax3.csv", ios::trunc);
 
     if(!Arquivo2.is_open()){
         cout << "Erro ao abrir o arquivo." << endl;
@@ -297,29 +301,3 @@ void MinMax :: LimparDadosArquivo(){
 
 }
 
-/*void MinMax :: ImprimirMedia(){
-
-    int v1 = 1000, v2 = 10000, v3 = 100000, v4 = 500000, aux = 0;
-    
-    cout << "Media MinMax1: " << AuxMinMax1/10 << endl;
-    cout << "Media MinMax2: " << AuxMinMax2/10 << endl;
-    cout << "Media MinMax3: " << AuxMinMax3/10 << endl;
-
-    
-    ofstream arquivo("/home/joaquim/Documents/TrabalhosAEDS/TrabalhoMinMax/Resultados/ResultadosMediasMinMax1.csv", ios::app);
-
-    if(!arquivo.is_open()){
-        cout << "Erro ao abrir o arquivo!" << endl;
-    }
-        
-        
-    arquivo << v1 << "," << AuxMinMax1;
-    aux++;
-
-    if(aux == 3){
-        arquivo << endl;
-        aux = 0;
-    } else{
-        arquivo << ",";
-    }
-}*/

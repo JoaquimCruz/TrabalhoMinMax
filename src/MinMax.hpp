@@ -18,8 +18,7 @@ public:
     void PrintarMinMaxAleatorio(vector<int> &vetor);
     void LimparDadosArquivo();
 
-    //Ver como eu vou fazer a média.
-    // ver o CodeData para tentar plotar mais de um gráfico 
+    
 };
 
 
