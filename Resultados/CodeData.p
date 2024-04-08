@@ -25,3 +25,23 @@ plot "ResultadosMinMax3.csv" using 1:2 with lp lw 3.0 lc 7 title "Vetor desorden
      "ResultadosMinMax3.csv" using 3:4 with lines lw 3.0 title "Vetor ordenado crescente", \
      "ResultadosMinMax3.csv" using 5:6 with lines lw 3.0 title "Vetor ordenado decrescente"
 
+set title "Medias MinMax1"
+set output "/home/joaquim/Documents/TrabalhosAEDS/TrabalhoMinMax/Resultados/Gráficos/DatasetsMediasMinMax1.png"
+plot "ResultadosMediasMinMax1.csv" using 1:2 with lp lw 3.0 lc 7 title "Vetor desordenado", \
+     "ResultadosMediasMinMax1.csv" using 3:4 with lines lw 3.0 title "Vetor ordenado crescente", \
+     "ResultadosMediasMinMax1.csv" using 5:6 with lines lw 3.0 title "Vetor ordenado decrescente"
+
+
+set title "Médias MinMax2"
+set output "/home/joaquim/Documents/TrabalhosAEDS/TrabalhoMinMax/Resultados/Gráficos/DatasetsMediasMinMax2.png"
+plot "ResultadosMediasMinMax2.csv" using 1:2 with lp lw 3.0 lc 7 title "Vetor desordenado", \
+     "ResultadosMediasMinMax2.csv" using 3:4 with lines lw 3.0 title "Vetor ordenado crescente", \
+     "ResultadosMediasMinMax2.csv" using 5:6 with lines lw 3.0 title "Vetor ordenado decrescente"
+
+
+set title "Médias MinMax3"
+set output "/home/joaquim/Documents/TrabalhosAEDS/TrabalhoMinMax/Resultados/Gráficos/DatasetsMediasMinMax3.png"
+plot "ResultadosMediasMinMax3.csv" using 1:2 with lp lw 3.0 lc 7 title "Vetor desordenado", \
+     "ResultadosMediasMinMax3.csv" using 3:4 with lines lw 3.0 title "Vetor ordenado crescente", \
+     "ResultadosMediasMinMax3.csv" using 5:6 with lines lw 3.0 title "Vetor ordenado decrescente"
+
