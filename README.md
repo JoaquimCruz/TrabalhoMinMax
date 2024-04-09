@@ -124,8 +124,10 @@ Os arquivos.csv possuem a seguinte estrutura: As colunas de valor **ímpar** rep
 O algorítimo MInMax1 por ser linear e ter o mesmo custo computacional para todos os casos, possui seu gráfico representado por uma reta de crescimento linear ao tamanho do vetor. Para a plotagem do gráfico, foram considerads os 4 vetores de tamanhos (1000, 10.000, 100.000 e 500.000), e das 3 formas citadas anteriormente (aleatório, ordenado crescentemente e ordenado decrescente). O primeiro gráfico representa o algorítimo MinMax1 executado apenas 1 vez seguindo os critérios acima. Nele podemos perceber o comportamento linear da função, sendo quase semelhante para as diferentes formas do vetor e para seus diferentes tamanhos.
 
 <p align="center">
-<img src=""/> 
+<img src="https://github.com/JoaquimCruz/TrabalhoMinMax/assets/162636656/4316b04d-c923-4eb6-a6e6-2dd7ace0dafd"/> 
 </p>
+
+
 
 
 
