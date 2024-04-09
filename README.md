@@ -87,7 +87,23 @@ O segundo algorítmo de busca é implementado utilizando um loop de repetição 
 
 - Para o melhor caso, o custo computacional será de "n", ou seja, a complexidade assintótica dessa função será O(n), onde n é o tamanho do vetor. Isso ocorre devido ao fato de que no melhor caso apenas 1 das estruturas condicionais será ativada, sendo seu custo computacional "n" referente à ela. Esse fenômeno acontecerá quando o vetor tiver ordenado crescentemente.
 - Para o caso médio, o custo computacional será de (3n/2). Isso ocorrerá devido ao fato de que no caso médio é considerado de que todos os valores "n" passem pela consição if, e que apenas metade dos valores passem pelo else-if "n/2". Assim, fazendo a soma dos termos "n" + "n/2" ficaremos com um algorítmo com custo computacional 3n/2, sendo 3/2 uma costante que pode ser desconsiderada por ser insgnificante dependendo do tamanho do vetor analisado.
-- Para o pior caso, o custo computacional será de "2n". Isso ocorrerá devido ao fato de que é considerado de que todos os valores passarão pela condição if e pela considção else if, ou seja, o valor "n" do vetor será multiplicado por 2. 
+- Para o pior caso, o custo computacional será de "2n". Isso ocorrerá devido ao fato de que é considerado de que todos os valores passarão pela condição if e pela considção else if, ou seja, o valor "n" do vetor será multiplicado por 2.
+</p>
+<p align="center">
+<img src="https://github.com/JoaquimCruz/TrabalhoMinMax/assets/162636656/0b1aa36a-a614-40ca-8221-e2cd6cb0d6e2"/> 
+</p>
+<h1 align="justify"/> Algorítimo MinMax3 </h1>
+</p>
+
+O terceiro algorítimo de busca é implementado utilizando primeiramete 2 blocos de if-else para faze atribuições à posições do vetor e para variáveis auxiliares. Após esses blocos, é utilizado um loop de repetição While para percorrer o vetor, começando o loop pela segunda posição. Dentro do loop de repetição é utlizado uma estrutura if-else principal, tendo dentro do if, duas estruturas if para a verificação dos possíveis valores máximos e mínimos do vetor. E estrutura dentro do Else se assemelha ao if, contendo dois ifs para a verificação dos possíveis valores maximos e mínimos do vetor.
+</p>
+<p align="center">
+<img src="https://github.com/JoaquimCruz/TrabalhoMinMax/assets/162636656/0b1aa36a-a614-40ca-8221-e2cd6cb0d6e2"/> 
+</p>
+
+
+
+
 
 
 
