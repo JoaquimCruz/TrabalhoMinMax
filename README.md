@@ -1,1 +1,70 @@
-# TrabalhoMinMax
+# Análise Assintótica de Algorítmos de busca 
+
+<div style="display: inline-block;">
+<img align="center" height="20px" width="90px" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"/> 
+<img align="center" height="20px" width="60px" src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white"/> 
+<img align="center" height="20px" width="80px" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg"/> 
+<a href="https://github.com/mpiress/midpy/issues">
+<img align="center" height="20px" width="90px" src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat"/>
+<img align="center" height="20px" width="80px" src="https://badgen.net/badge/license/MIT/green"/>
+</a> 
+</div>
+
+<p> </p>
+<p> </p>
+
+<p align="justify">
+
+## Resumo 
+
+Este repositório armazena o código referente ao trabalho sobre algoritmos de busca em vetores, da disciplina Algorítmo e Estrutura de Dados (AEDS). 
+
+## Objetivos
+
+O trabalho tem como finalidade a implementação de 3 algorítimos de busca em vetor apresentados em sala: MinMax1, MinMax2, MinMax3. O principal objetivo com a implementação dos 3 algorítmos de procura é analisar, por meio do calculo do tempo de execução, qual deles possui melhor desempenho mediante a diferentes tamanhos de vetores. Diante disso, fora utilizados 4 vetores de tamanhos: 1000, 10.000, 100.000, 500.000 posições. Ao decorrer do READ.me serão apresentados gráficos que exemplificaram o tempo de execução das funções, e facilitarão na compreensão da teoria assintótica.
+
+## Código
+
+O código do trabalho é dividido em 3 arquivos: MinMax.hpp, MinMax.cpp e Main.cpp. Ademais, foram utilizados um arquivo que armazena o script da ferramenta Gnuplot - que plotará os gráficos analisados- e 7 arquivos .csv.
+
+<h1 align="center"/> MinMax.hpp </h1>
+</p>
+<p align="justify"> 
+</p>
+O arquivo MinMax.hpp define a classe MinMax. Tal classe não possui atributos privados, porém possui os seguintes atributos públicos:
+</p>
+
+- void MinMax1(vector<int> &vetor, int Max, int Min ); 
+- void MinMax2(vector<int> &vetor, int max, int min); 
+- void MinMax3(vector<int> &vetor, int max, int min, int tam); 
+- void Preenche_Vetor(vector<int> &vetor, int tamanho, int max, int min);
+- void MedirTempoMinMax1(vector <int> &vetor);
+- void MedirTempoMinMax2(vector <int> &vetor);
+- void MedirTempoMinMax3(vector <int> &vetor);
+- void PrintarMinMaxOrdenado(vector<int> &vetor);
+- void PrintarMinMaxAleatorio(vector<int> &vetor);
+- void LimparDadosArquivo();
+</p>
+
+<h1 align="center"/> MinMax.cpp </h1>
+</p>
+<p align="justify"> 
+</p>
+
+
+O arquivo MinMax.cpp implementa as funções definidas no arquivo MinMax.hpp. Para isso, foram utilizadas as seguintes bibliotecas:
+- Chrono: A biblioteca Chrono foi utlizada para medir o tempo de execução de cada função MinMax (MinMax1, MinMax2, MinMax3);
+- Random: A biblioteca Random foi utlizada para preencher os vetores com valores aleatórios que iam de 0 a 1000;
+- Algorithm: A biblioteca Algorithm foi utliada por meio da função sort, que foi utlizada para ordenar os vetores de maneira crescente e decrescente.
+- Fstream: A bibliotexa Fstream foi utilizada para fazer manipulações nos arquivos csv.
+</p>
+
+Para implentação do código, foram utilizadas 3 funções de busca já pré-definidas em sala. Cada algorítmo busca o menor e o maior valor dentro de um vetor. Cada função busca de maneira diferente os dados dentro do vetor, tendo assim tempos diferentes de execução e diferentes custos computacionais para fazer tal processo. 
+</p>
+
+</p>
+<h1 align="justify"/> Algorítimo MinMax1 </h1>
+</p>
+<p align="justify"> 
+</p>
+
