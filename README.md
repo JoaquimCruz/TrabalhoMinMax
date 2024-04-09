@@ -61,10 +61,15 @@ O arquivo MinMax.cpp implementa as funções definidas no arquivo MinMax.hpp. Pa
 
 Para implentação do código, foram utilizadas 3 funções de busca já pré-definidas em sala. Cada algorítmo busca o menor e o maior valor dentro de um vetor. Cada função busca de maneira diferente os dados dentro do vetor, tendo assim tempos diferentes de execução e diferentes custos computacionais para fazer tal processo. 
 </p>
+<p align="center">
+<img src="https://github.com/JoaquimCruz/TrabalhoMinMax/assets/162636656/d91e6a2d-641e-4e0e-afc1-a7a8a9b7f1fd"/> 
+</p>
 
 </p>
 <h1 align="justify"/> Algorítimo MinMax1 </h1>
 </p>
 <p align="justify"> 
 </p>
+O primeiro algorítmo de busca é implementado utilizando um loop de repetição For, que percorre o todas as posições do vetor. Dentro do loop for são ultizadas duas estruturas condicionais IF, o primeiro para verificar se o elemento analisado é o maior do vetor, e o segundo para verificar se o elemento analisado é o menor do vetor. Assim, pela utilização das duas estruturas condicionais dentro do For, o algorítmo MinMax1 tem custo computacional de 2n, sendo "n" o tamanho do vetor analisado. Esse custo representa que para cada vetor de tamanho "n", serão feitas duas verificações condicionais para ver se é o valor máximo/mínimo. Dessa maneira, de "n", o custo computacional passa a ser "2n". Portanto, a complexidade assintótica dessa função é O(n), onde "n" é o tamanho do vetor. Isso significa que o custo computacional aumenta linearmente com o tamanho do vetor.
+
 
