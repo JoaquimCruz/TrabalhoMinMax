@@ -121,13 +121,25 @@ Os arquivos.csv possuem a seguinte estrutura: As colunas de valor **ímpar** rep
 </p>
 <h1 align="justify"/> Gráficos MinMax1 </h1>
 </p>
-O algorítimo MInMax1 por ser linear e ter o mesmo custo computacional para todos os casos, possui seu gráfico representado por uma reta de crescimento linear ao tamanho do vetor. Para a plotagem do gráfico, foram considerads os 4 vetores de tamanhos (1000, 10.000, 100.000 e 500.000), e das 3 formas citadas anteriormente (aleatório, ordenado crescentemente e ordenado decrescente). O primeiro gráfico representa o algorítimo MinMax1 executado apenas 1 vez seguindo os critérios acima. Nele podemos perceber o comportamento linear da função, sendo quase semelhante para as diferentes formas do vetor e para seus diferentes tamanhos.
+O algorítimo MinMax1 por ser linear e ter o mesmo custo computacional para todos os casos, possui seu gráfico representado por uma reta de crescimento linear ao tamanho do vetor. Para a plotagem do gráfico, foram considerads os 4 vetores de tamanhos (1000, 10.000, 100.000 e 500.000), e das 3 formas citadas anteriormente (aleatório, ordenado crescentemente e ordenado decrescente). O primeiro gráfico representa o algorítimo MinMax1 executado apenas 1 vez seguindo os critérios acima. Nele podemos perceber o comportamento linear da função, sendo quase semelhante para as diferentes formas do vetor e para seus diferentes tamanhos.
 </p>
 <p align="center">
 <img src="https://github.com/JoaquimCruz/TrabalhoMinMax/assets/162636656/1c7a6b20-85f8-48fc-8982-896b1271ac0b" width="700px"/> 
 </p>
 
-Para o gráfico da média de 10 execuções do código, temos que o comportamento do gráfico continua sendo 
+Para o gráfico da média de 10 execuções do código, temos que o comportamento do gráfico continua tendo um crescimento linear, sendo quase semelhante para as diferentes formas de vetor e para seus diferentes tamanhos.
+<p align="center">
+<img src="https://github.com/JoaquimCruz/TrabalhoMinMax/assets/162636656/67c9a3a6-abf2-4617-8924-6325e1bc4d16" width="700px"/> 
+</p>
+<h1 align="justify"/> Gráficos MinMax2 </h1>
+</p>
+
+O algorítmo MinMax2, mesmo tendo diferentes custos computacionais para o melhor, caso médio e pior caso, manteve um crescimento retiníneo quando aumentamos o tamanho do vetor. Ademais, não obteve diferença significativa quando analisamos as 3 diferentes ordenações dos vetores (desordenados, ordenados crescentimente e ordenados decrescentemente). 
+
+
+
+
+
 
 
 
