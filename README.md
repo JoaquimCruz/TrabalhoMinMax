@@ -103,7 +103,7 @@ O terceiro algorítimo de busca é implementado utilizando primeiramete 2 blocos
 
 Analisando o código, podemos concluir que os elementos são analisados em pares, dessa forma o custo computacional é inicialmente reduzido para (n/2). Seguindo o código, caso os valores analisados entrem dentro do primeiro if, o seu custo será reduzido para "n/2", pois esses elementos, por terem entrado no if, não entrarão no else. Seguindo o mesmo raciocínio, o custo será reduzido para "n/2" caso entrem no else. Portanto, fazendo a soma, (n+n+n)/2 = 3n/2 de custo computacional, podendo desprezar novamente a constante "-2" que se torna insignificante para análise assintótica de vetores grandes. O algorítmo possui o mesmo custo computacional para todos os casos (melhor, caso médio e pior caso), isso significa que o custo computacional aumenta linearmente com o tamanho do vetor.
 
-<h1 align="center"/> Análise dos gráficos </h1>
+<h1 align="center"/> Resultados </h1>
 </p>
 <p align="justify"> 
 </p>
@@ -146,6 +146,14 @@ De mesmo modo, o gráfico da média de 10 execuções do código, apresenta comp
 </p>
 <h1 align="justify"/> Gráficos MinMax3 </h1>
 </p>
+
+O algorítimo MinMax3 possui uma peculiaridade no comportamento gráfico antes não vista nos dois algorítimos antes analisados. A linha que representa o vetor desordenado destoa de maneira negativa das linhas do vetor ordenado, sendo a que mais gasta tempo para ser executada dentre todas as variações de todos MinMax. Esse comportamento anômalo não é justificado assintóticamente pelo custo computacional do algorítimo, pois ele tem o mesmo custo para todos os casos(pior caso, melhor caso e caso médio). Entretanto, mesmo demorando mais tempo a ser executado, o vetor desordenado ainda segue um crescimento retilíneo junto ao tamanho "n" do vetor. 
+</p>
+<p align="center">
+<img src="https://github.com/JoaquimCruz/TrabalhoMinMax/assets/162636656/9a80b32d-c7bb-4320-8711-9114056cade6" width="700px"/> 
+</p>
+
+
 
 
 
