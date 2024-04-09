@@ -1,4 +1,4 @@
-# Análise Assintótica de Algorítmos de busca 
+# Análise Assintótica de Algorítmos de busca em vetor
 
 <div style="display: inline-block;">
 <img align="center" height="20px" width="90px" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"/> 
@@ -110,15 +110,17 @@ Analisando o código, podemos concluir que os elementos são analisados em pares
 
 A parte gráfica do trabalho foi feita utilizando a ferramenta Gnuplot - um programa de linha de comando que pode plotar os gráficos de funções matemáticas em duas ou três dimensões, e outros conjuntos de dados. Para plotar os gráficos, foi utlizado um script que está dentro da pasta resultados, no arquivo denominado "CodeData.p". Ademais, para criar os gráficos foram utilizados dados gerados pelo programa, que foram armazenados nos 7 arquivos.csv. Tais arquivos possuem diferentes divisões. 
 </p>
-- Os arquivos **ResultadosMinMax** são preenchidos a cada execução do código e são plotados com o resultado de uma execução do código. Eles são preenchidos por meio de uma função que joga os valores para dentro do arquivo.
-- Os arquivos **ResultadosMediasMinMax** são preenchidos a mão após a execução do código 10 vezes, e representam as médias de tempo de execução dos algorítmos de maneira desordenada, ordenada crescentemente e ordenada decrescentemente.
-- O arquivo **Data** é uma planilha no excel que contém os dados das 10 execuções para cada ordenamento do vetor e para cada um dos 3 algorítmos, bem como o cálculo das médias.
+- Os arquivos ResultadosMinMax são preenchidos a cada execução do código e são plotados com o resultado de uma execução do código. Eles são preenchidos por meio de uma função que joga os valores para dentro do arquivo.
+- Os arquivos ResultadosMediasMinMax são preenchidos a mão após a execução do código 10 vezes, e representam as médias de tempo de execução dos algorítmos de maneira desordenada, ordenada crescentemente e ordenada decrescentemente.
+- O arquivo Data é uma planilha no excel que contém os dados das 10 execuções para cada ordenamento do vetor e para cada um dos 3 algorítmos, bem como o cálculo das médias.
 
 Os arquivos.csv possuem a seguinte estrutura: As colunas de valor **ímpar** representam o tamanho do vetor, e as colunas de valor **par** representam os tempos de execução. 
-
-<p align="center">
-<img src="https://github.com/JoaquimCruz/TrabalhoMinMax/assets/162636656/bc32c3a3-0178-45f0-bffa-d29db5fb94b5"/> 
 </p>
+</p>
+<p align="center">
+<img src="https://github.com/JoaquimCruz/TrabalhoMinMax/assets/162636656/1e339f55-1aed-42a7-a113-32e4d9d11243" width = "500px" /> 
+</p>
+
 <h1 align="justify"/> Gráficos MinMax1 </h1>
 </p>
 O algorítimo MinMax1 por ser linear e ter o mesmo custo computacional para todos os casos, possui seu gráfico representado por uma reta de crescimento linear ao tamanho do vetor. Para a plotagem do gráfico, foram considerads os 4 vetores de tamanhos (1000, 10.000, 100.000 e 500.000), e das 3 formas citadas anteriormente (aleatório, ordenado crescentemente e ordenado decrescente). O primeiro gráfico representa o algorítimo MinMax1 executado apenas 1 vez seguindo os critérios acima. Nele podemos perceber o comportamento linear da função, sendo quase semelhante para as diferentes formas do vetor e para seus diferentes tamanhos.
@@ -150,8 +152,37 @@ De mesmo modo, o gráfico da média de 10 execuções do código, apresenta comp
 O algorítimo MinMax3 possui uma peculiaridade no comportamento gráfico antes não vista nos dois algorítimos antes analisados. A linha que representa o vetor desordenado destoa de maneira negativa das linhas do vetor ordenado, sendo a que mais gasta tempo para ser executada dentre todas as variações de todos MinMax. Esse comportamento anômalo não é justificado assintóticamente pelo custo computacional do algorítimo, pois ele tem o mesmo custo para todos os casos(pior caso, melhor caso e caso médio). Entretanto, mesmo demorando mais tempo a ser executado, o vetor desordenado ainda segue um crescimento retilíneo junto ao tamanho "n" do vetor. 
 </p>
 <p align="center">
-<img src="https://github.com/JoaquimCruz/TrabalhoMinMax/assets/162636656/9a80b32d-c7bb-4320-8711-9114056cade6" width="700px"/> 
+<img src="https://github.com/JoaquimCruz/TrabalhoMinMax/assets/162636656/f3b9ddff-bf84-4276-9c89-c756ce1051f0" width="700px"/> 
 </p>
+De mesmo modo, a linha que representa a média das 10 execuções do MinMax3 com o vetor aleatório se distoa negativamente das outras no gráfico de Médias. 
+</p>
+<p align="center">
+<img src="https://github.com/JoaquimCruz/TrabalhoMinMax/assets/162636656/51387809-b7b7-4c7b-b605-baedf15c80ae" width="700px"/> 
+</p>
+
+<h1 align="center"/> Conclusão </h1>
+</p>
+<p align="justify"> 
+</p>
+Apoś as análises dos gráficos, pode-se concluir que:
+</p>
+
+- Para vetores Aleatórios: Para vetores aleatórios o algorítimo MinMax1 possui o melhor e mais constante desempenho, enquanto o MinMax3 possui o pior desempenho;
+- Para vetores Ordenados: Para vetores ordenados, seja decrescentemente ou crescentemente, o algorítimo MinMax3 possui o melhor desempenho, enquando o MinMax1 possui o pior desempenho;
+- No geral, o algorítimo MinMax2 possui a maior constância, quando analisado os melhores, os casos médios e os piores casos. Ademais, possui a maior constância também com os 3 tipos de ordenação do vetor (crescente, decrescente e desordenado).
+
+
+
+# Compilação e Execução
+
+O código que implementa os algorítmos de busca em vetor disponibilizado possui um arquivo Makefile que realiza todo o procedimento de compilação e execução. Para tanto, temos as seguintes diretrizes de execução:
+
+
+| Comando                |  Função                                                                                           |                     
+| -----------------------| ------------------------------------------------------------------------------------------------- |
+|  `make clean`          | Apaga a última compilação realizada contida na pasta build                                        |
+|  `make`                | Executa a compilação do programa utilizando o gcc, e o resultado vai para a pasta build           |
+|  `make run`            | Executa o programa da pasta build após a realização da compilação                                 |
 
 
 
