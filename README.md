@@ -108,6 +108,21 @@ Analisando o código, podemos concluir que os elementos são analisados em pares
 <p align="justify"> 
 </p>
 
+A parte gráfica do trabalho foi feita utilizando a ferramenta Gnuplot - um programa de linha de comando que pode plotar os gráficos de funções matemáticas em duas ou três dimensões, e outros conjuntos de dados. Para plotar os gráficos, foi utlizado um script que está dentro da pasta resultados. Ademais, para criar os gráficos foram utilizados dados gerados pelo programa, que foram armazenados nos 7 arquivos.csv. Esses 7 arquivos possuem diferentes divisões. 
+</p>
+- Os arquivos **ResultadosMinMax** são preenchidos a cada execução do código e são plotados com o resultado de 1 execução do código. Eles são preenchidos por meio de uma função do código que joga os valores para dentro do arquivo.
+- Os arquivos **ResultadosMediasMinMax** são preenchidos a mão após a execução do código 10 vezes, e representam as médias de tempo de execução dos algorítmos de maneira desordenada, ordenada crescentemente e ordenada decrescentemente.
+- O arquivo **Data** é uma planilha no excel que contém os dados das 10 execuções para cada ordenamento do vetor e para cada um dos 3 algorítmos, bem como o cálculo das médias.
+
+Os arquivos.csv possuem a seguinte estrutura: As colunas de valor **ímpar** representam o tamanho do vetor, e as colunas de valor **par** representam os tempos de execução. 
+
+<p align="center">
+<img src=""/> 
+</p>
+<h1 align="justify"/> Graficos MinMax1 </h1>
+</p>
+
+
 
 
 
