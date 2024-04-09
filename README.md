@@ -127,6 +127,8 @@ O algorítimo MInMax1 por ser linear e ter o mesmo custo computacional para todo
 <img src="https://github.com/JoaquimCruz/TrabalhoMinMax/assets/162636656/1c7a6b20-85f8-48fc-8982-896b1271ac0b" width="700px"/> 
 </p>
 
+Para o gráfico da média de 10 execuções do código, temos que o comportamento do gráfico continua sendo 
+
 
 
 
