@@ -70,6 +70,27 @@ Para implentação do código, foram utilizadas 3 funções de busca já pré-de
 </p>
 <p align="justify"> 
 </p>
-O primeiro algorítmo de busca é implementado utilizando um loop de repetição For, que percorre o todas as posições do vetor. Dentro do loop for são ultizadas duas estruturas condicionais IF, o primeiro para verificar se o elemento analisado é o maior do vetor, e o segundo para verificar se o elemento analisado é o menor do vetor. Assim, pela utilização das duas estruturas condicionais dentro do For, o algorítmo MinMax1 tem custo computacional de 2n, sendo "n" o tamanho do vetor analisado. Esse custo representa que para cada vetor de tamanho "n", serão feitas duas verificações condicionais para ver se é o valor máximo/mínimo. Dessa maneira, de "n", o custo computacional passa a ser "2n". Portanto, a complexidade assintótica dessa função é O(n), onde "n" é o tamanho do vetor. Isso significa que o custo computacional aumenta linearmente com o tamanho do vetor.
+O primeiro algorítmo de busca é implementado utilizando um loop de repetição For, que percorre todas as posições do vetor. Dentro do loop for são ultizadas duas estruturas condicionais IF, o primeiro para verificar se o elemento analisado é o maior do vetor, e o segundo para verificar se o elemento analisado é o menor do vetor. Assim, pela utilização das duas estruturas condicionais dentro do For, o algorítmo MinMax1 tem custo computacional de 2n, sendo "n" o tamanho do vetor analisado. Esse custo representa que para cada vetor de tamanho "n", serão feitas duas verificações condicionais para ver se é o valor máximo/mínimo. Dessa maneira, de "n", o custo computacional passa a ser "2n". Portanto, a complexidade assintótica dessa função é O(n), onde "n" é o tamanho do vetor. Isso significa que o custo computacional aumenta linearmente com o tamanho do vetor.
+</p>
+<p align="center">
+<img src="https://github.com/JoaquimCruz/TrabalhoMinMax/assets/162636656/ba649096-6fff-4c4e-ab63-cc1b90e4f205"/> 
+</p>
+
+Por ser um algorítimo de crescimento linear, ele possui o mesmo custo computacional para todos os casos ( melhor, caso médio, e pior caso).
+</p>
+<h1 align="justify"/> Algorítimo MinMax2 </h1>
+</p>
+<p align="justify"> 
+</p>
+O segundo algorítmo de busca é implementado utilizando um loop de repetição For, que percorre todas as pocições do vetor. Dentro do loop for é utlizado uma estrutura condicional if e uma estrutura condicional if else, para verificar se o valor analisado é o valor máximo do vetor, ou o mínimo. Desse modo, pela utilização do else-if, o custo computacional da função irá variar de acordo com o caso (melhor, caso médio, pior caso).
+</p>
+
+- Para o melhor caso, o custo computacional será de "n", ou seja, a complexidade assintótica dessa função será O(n), onde n é o tamanho do vetor. Isso ocorre devido ao fato de que no melhor caso apenas 1 das estruturas condicionais será ativada, sendo seu custo computacional "n" referente à ela. Esse fenômeno acontecerá quando o vetor tiver ordenado crescentemente.
+- Para o caso médio, o custo computacional será de (3n/2). Isso ocorrerá devido ao fato de que no caso médio é considerado de que todos os valores "n" passem pela consição if, e que apenas metade dos valores passem pelo else-if "n/2". Assim, fazendo a soma dos termos "n" + "n/2" ficaremos com um algorítmo com custo computacional 3n/2, sendo 3/2 uma costante que pode ser desconsiderada por ser insgnificante dependendo do tamanho do vetor analisado.
+- Para o pior caso, o custo computacional será de "2n". Isso ocorrerá devido ao fato de que é considerado de que todos os valores passarão pela condição if e pela considção else if, ou seja, o valor "n" do vetor será multiplicado por 2. 
+
+
+
+
 
 
