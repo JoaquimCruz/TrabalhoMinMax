@@ -86,8 +86,8 @@ O segundo algorítmo de busca é implementado utilizando um loop de repetição 
 </p>
 
 - Para o melhor caso, o custo computacional será de "n", ou seja, a complexidade assintótica dessa função será O(n), onde n é o tamanho do vetor. Isso ocorre devido ao fato de que no melhor caso apenas 1 das estruturas condicionais será ativada, sendo seu custo computacional "n" referente à ela. Esse fenômeno acontecerá quando o vetor tiver ordenado crescentemente.
-- Para o caso médio, o custo computacional será de (3n/2). Isso ocorrerá devido ao fato de que no caso médio é considerado de que todos os valores "n" passem pela consição if, e que apenas metade dos valores passem pelo else-if "n/2". Assim, fazendo a soma dos termos "n" + "n/2" ficaremos com um algorítmo com custo computacional 3n/2, sendo 3/2 uma costante que pode ser desconsiderada por ser insgnificante dependendo do tamanho do vetor analisado.
-- Para o pior caso, o custo computacional será de "2n". Isso ocorrerá devido ao fato de que é considerado de que todos os valores passarão pela condição if e pela considção else if, ou seja, o valor "n" do vetor será multiplicado por 2.
+- Para o caso médio, o custo computacional será de (3n/2). Isso ocorrerá devido ao fato de que no caso médio é considerado que todos os valores "n" passem pela consição if, e que apenas metade dos valores passem pelo else-if "n/2". Assim, fazendo a soma dos termos "n" + "n/2" ficaremos com um algorítmo com custo computacional 3n/2, sendo 3/2 uma costante que pode ser desconsiderada por ser insignificante dependendo do tamanho do vetor analisado.
+- Para o pior caso, o custo computacional será de "2n". Isso ocorrerá devido ao fato de que é considerado que todos os valores passarão pela condição if e pela considção else if, ou seja, o valor "n" do vetor será multiplicado por 2.
 </p>
 <p align="center">
 <img src="https://github.com/JoaquimCruz/TrabalhoMinMax/assets/162636656/0b1aa36a-a614-40ca-8221-e2cd6cb0d6e2"/> 
@@ -95,7 +95,7 @@ O segundo algorítmo de busca é implementado utilizando um loop de repetição 
 <h1 align="justify"/> Algorítimo MinMax3 </h1>
 </p>
 
-O terceiro algorítimo de busca é implementado utilizando primeiramete 2 blocos de if-else para faze atribuições à posições do vetor e para variáveis auxiliares. Após esses blocos, é utilizado um loop de repetição While para percorrer o vetor, começando o loop pela segunda posição. Dentro do loop de repetição é utlizado uma estrutura if-else principal, tendo dentro do if, duas estruturas if para a verificação dos possíveis valores máximos e mínimos do vetor. E estrutura dentro do Else se assemelha ao if, contendo dois ifs para a verificação dos possíveis valores maximos e mínimos do vetor.
+O terceiro algorítimo de busca é implementado utilizando primeiramete 2 blocos de if-else para fazer atribuições à posições do vetor e para variáveis auxiliares. Após esses blocos, é utilizado um loop de repetição While para percorrer o vetor, começando o loop pela segunda posição. Dentro do loop de repetição é utlizado uma estrutura if-else principal, tendo dentro do if, duas estruturas if para a verificação dos possíveis valores máximos e mínimos do vetor. A estrutura dentro do Else se assemelha ao if, contendo dois ifs para a verificação dos possíveis valores maximos e mínimos do vetor.
 </p>
 <p align="center">
 <img src="https://github.com/JoaquimCruz/TrabalhoMinMax/assets/162636656/fb58ea79-90bf-44fe-b7ef-dd1a17d37a29"/> 
@@ -108,9 +108,9 @@ Analisando o código, podemos concluir que os elementos são analisados em pares
 <p align="justify"> 
 </p>
 
-A parte gráfica do trabalho foi feita utilizando a ferramenta Gnuplot - um programa de linha de comando que pode plotar os gráficos de funções matemáticas em duas ou três dimensões, e outros conjuntos de dados. Para plotar os gráficos, foi utlizado um script que está dentro da pasta resultados. Ademais, para criar os gráficos foram utilizados dados gerados pelo programa, que foram armazenados nos 7 arquivos.csv. Esses 7 arquivos possuem diferentes divisões. 
+A parte gráfica do trabalho foi feita utilizando a ferramenta Gnuplot - um programa de linha de comando que pode plotar os gráficos de funções matemáticas em duas ou três dimensões, e outros conjuntos de dados. Para plotar os gráficos, foi utlizado um script que está dentro da pasta resultados, no arquivo denominado "CodeData.p". Ademais, para criar os gráficos foram utilizados dados gerados pelo programa, que foram armazenados nos 7 arquivos.csv. Tais arquivos possuem diferentes divisões. 
 </p>
-- Os arquivos **ResultadosMinMax** são preenchidos a cada execução do código e são plotados com o resultado de 1 execução do código. Eles são preenchidos por meio de uma função do código que joga os valores para dentro do arquivo.
+- Os arquivos **ResultadosMinMax** são preenchidos a cada execução do código e são plotados com o resultado de uma execução do código. Eles são preenchidos por meio de uma função que joga os valores para dentro do arquivo.
 - Os arquivos **ResultadosMediasMinMax** são preenchidos a mão após a execução do código 10 vezes, e representam as médias de tempo de execução dos algorítmos de maneira desordenada, ordenada crescentemente e ordenada decrescentemente.
 - O arquivo **Data** é uma planilha no excel que contém os dados das 10 execuções para cada ordenamento do vetor e para cada um dos 3 algorítmos, bem como o cálculo das médias.
 
@@ -135,6 +135,23 @@ Para o gráfico da média de 10 execuções do código, temos que o comportament
 </p>
 
 O algorítmo MinMax2, mesmo tendo diferentes custos computacionais para o melhor, caso médio e pior caso, manteve um crescimento retiníneo quando aumentamos o tamanho do vetor. Ademais, não obteve diferença significativa quando analisamos as 3 diferentes ordenações dos vetores (desordenados, ordenados crescentimente e ordenados decrescentemente). 
+<p align="center">
+<img src="https://github.com/JoaquimCruz/TrabalhoMinMax/assets/162636656/d748277a-00ba-4705-826f-3db27db7f243" width="700px"/> 
+</p>
+De mesmo modo, o gráfico da média de 10 execuções do código, apresenta comportamento linear, chegando a ocorrer sobreposição das linhas para vetores de tamanho 200.000 posições. 
+</p>
+<p align="center">
+<img src="https://github.com/JoaquimCruz/TrabalhoMinMax/assets/162636656/9a80b32d-c7bb-4320-8711-9114056cade6" width="700px"/> 
+</p>
+</p>
+<h1 align="justify"/> Gráficos MinMax3 </h1>
+</p>
+
+
+
+
+
+
 
 
 
