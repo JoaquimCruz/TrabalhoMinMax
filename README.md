@@ -98,8 +98,16 @@ O segundo algorítmo de busca é implementado utilizando um loop de repetição 
 O terceiro algorítimo de busca é implementado utilizando primeiramete 2 blocos de if-else para faze atribuições à posições do vetor e para variáveis auxiliares. Após esses blocos, é utilizado um loop de repetição While para percorrer o vetor, começando o loop pela segunda posição. Dentro do loop de repetição é utlizado uma estrutura if-else principal, tendo dentro do if, duas estruturas if para a verificação dos possíveis valores máximos e mínimos do vetor. E estrutura dentro do Else se assemelha ao if, contendo dois ifs para a verificação dos possíveis valores maximos e mínimos do vetor.
 </p>
 <p align="center">
-<img src="https://github.com/JoaquimCruz/TrabalhoMinMax/assets/162636656/0b1aa36a-a614-40ca-8221-e2cd6cb0d6e2"/> 
+<img src="https://github.com/JoaquimCruz/TrabalhoMinMax/assets/162636656/fb58ea79-90bf-44fe-b7ef-dd1a17d37a29"/> 
 </p>
+
+Analisando o código, podemos concluir que os elementos são analisados em pares, dessa forma o custo computacional é inicialmente reduzido para (n/2). Seguindo o código, caso os valores analisados entrem dentro do primeiro if, o seu custo será reduzido para "n/2", pois esses elementos, por terem entrado no if, não entrarão no else. Seguindo o mesmo raciocínio, o custo será reduzido para "n/2" caso entrem no else. Portanto, fazendo a soma, (n+n+n)/2 = 3n/2 de custo computacional, podendo desprezar novamente a constante "-2" que se torna insignificante para análise assintótica de vetores grandes. O algorítmo possui o mesmo custo computacional para todos os casos (melhor, caso médio e pior caso), isso significa que o custo computacional aumenta linearmente com o tamanho do vetor.
+
+<h1 align="center"/> Análise dos gráficos </h1>
+</p>
+<p align="justify"> 
+</p>
+
 
 
 
