@@ -1,4 +1,4 @@
-# Análise Assintótica de Algorítmos de Busca em Vetor
+# Análise Assintótica de Algoritmos de Busca em Vetor
 
 <div style="display: inline-block;">
 <img align="center" height="20px" width="90px" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"/> 
