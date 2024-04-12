@@ -130,20 +130,28 @@ O algorítimo MinMax1 por ser linear e ter o mesmo custo computacional para todo
 </p>
 
 Para o gráfico da média de 10 execuções do código, temos que o comportamento do gráfico continua tendo um crescimento linear, sendo quase semelhante para as diferentes formas de vetor e para seus diferentes tamanhos.
+Para as médias, foram feitos 2 testes. O gráfico da esquerda representa 10 execuções do código com vetores preenchidos com valores aleatórios diferentes, já o gráfico da direita representa 10 execuções do código com vetores preenchidos com o mesmo valor em cada execução. 
 <p align="center">
-<img src="https://github.com/JoaquimCruz/TrabalhoMinMax/assets/162636656/67c9a3a6-abf2-4617-8924-6325e1bc4d16" width="700px"/> 
+<img src="https://github.com/JoaquimCruz/TrabalhoMinMax/assets/162636656/67c9a3a6-abf2-4617-8924-6325e1bc4d16" width="500px"/> 
+<img src="https://github.com/JoaquimCruz/TrabalhoMinMax/assets/162636656/8e33dc30-7ec0-4b2d-8f33-00ba3a910439" width="500px"/> 
+</p>
+Nota-se que para o valor inicial "n0" ambos os gráficos crescem de maneira linear, mantendo um mesmo padrão para os 3 tipos de vetor. Ademais, a proximidade das linhas comprovam que para o melhor caso, para o caso médio e para o pior caso, o algorítimo MinMax1 possui o mesmo custo computacional de 2n.
 </p>
 <h1 align="justify"/> Gráficos MinMax2 </h1>
 </p>
+
+
+
 
 O algorítmo MinMax2, mesmo tendo diferentes custos computacionais para o melhor, caso médio e pior caso, manteve um crescimento retiníneo quando aumentamos o tamanho do vetor. Ademais, não obteve diferença significativa quando analisamos as 3 diferentes ordenações dos vetores (desordenados, ordenados crescentimente e ordenados decrescentemente). 
 <p align="center">
 <img src="https://github.com/JoaquimCruz/TrabalhoMinMax/assets/162636656/d748277a-00ba-4705-826f-3db27db7f243" width="700px"/> 
 </p>
-De mesmo modo, o gráfico da média de 10 execuções do código, apresenta comportamento linear, chegando a ocorrer sobreposição das linhas para vetores de tamanho 200.000 posições. 
+De mesmo modo, o gráfico das médias apresenta comportamento linear. Para a análise das médias, foram feitos 2 testes diferentes. O gráfico da esquerda representa a média dos valores de 10 execuções, em que cada elas o vetor é preenchido com valores diferentes de 0 a 1000. Nele, podemos perceber o ocmportamente linear e a proximidade das linhas que representam o tipo de ordenação do vetor, sendo que em determinado ponto do gráfico, as linhas que representam o vetor ordenado se sobrepõem. Já o segundo gráfico representa a médias dos valores de 10 execuções, em que o vetor é preenchido com os mesmos valores em todas as execuções. Assim, por conta disso, podemos perceber uma diferença no comportamente no gráfico. Nele, o comportamente continua linear, porém a proximidade das linhas é menor, com o vetor desornenado gastando mais tempo de execução. 
 </p>
 <p align="center">
-<img src="https://github.com/JoaquimCruz/TrabalhoMinMax/assets/162636656/9a80b32d-c7bb-4320-8711-9114056cade6" width="700px"/> 
+<img src="https://github.com/JoaquimCruz/TrabalhoMinMax/assets/162636656/9a80b32d-c7bb-4320-8711-9114056cade6" width="500px"/> 
+ <img src="https://github.com/JoaquimCruz/TrabalhoMinMax/assets/162636656/993d54d0-1b2d-45eb-87c8-49125d188695" width="500px"/>
 </p>
 </p>
 <h1 align="justify"/> Gráficos MinMax3 </h1>
@@ -154,10 +162,12 @@ O algorítimo MinMax3 possui uma peculiaridade no comportamento gráfico antes n
 <p align="center">
 <img src="https://github.com/JoaquimCruz/TrabalhoMinMax/assets/162636656/f3b9ddff-bf84-4276-9c89-c756ce1051f0" width="700px"/> 
 </p>
-De mesmo modo, a linha que representa a média das 10 execuções do MinMax3 com o vetor aleatório se distoa negativamente das outras no gráfico de Médias. 
+Para o gráfico das médias, foram realizados 2 testes. O gráfico da esquerda representa a média dos valores de 10 execuções, em que cada elas o vetor é preenchido com valores diferentes de 0 a 1000. Nele, de mesmo modo ao gráfico acima, o Algorítimo MinMax3 para o vetor desordenado se distoa muito em relação aos vetores ordenados. Entretetanto, para o segundo caso, em que o vetor se mantem preenchido com o mesmo valor para todas as 10 execuções, o Algorítimo MinMax3 para o vetor desordenado tem uma considerável melhora em relação ao tempo de execução. Mas porque isso acontece? Ao criar um vetor de Inteiros por exemplo, ocorrerá uma alocação na memória do tamanho desse vetor. A título de exemplificação, ao se criar um vetor de inteiros de 100 posições, é armazenado na memória o tamanho desse vetor, e em cada posição cabe um valor inteiro de tamanho máximo = 2³²-1. Assim, em teoria os valores de cada posição não afetariam ao percorrer cada posição desse vetor, desde que eles estejam dentro do valor máximo de um inteiro. Porém, quando analisamos mais afundo, o processo de codificaçãao de números para binaŕio é diferente de acordo com seu valor. Para codificarmos o número 100 para binário, o processador gasta uma quantidade "x" de tempo e um número "y" de instruções. Já para codificarmos o número 500, o processador gasta uma quantidade maior "x" de tempo e um número maior "y" de instruções. Desse modo, os valores com que o vetor está preenchido alteraram o tempo de execução do código. Portanto, como foi utilizado o vetor preenchido com os mesmos valores nas 10 execuções, o tempo de execução da MinMax3 para o vetor desordenado caiu significantemente, e se equiparou ao tempo de execução dos vetores ordenados. Dessa maneira, o comportamento do segundo gráfico representa melhor assintoticamente a função MinMax3, considerando que ela tem o mesmo custo computacional para o melhor, pior e caso médio.
 </p>
 <p align="center">
-<img src="https://github.com/JoaquimCruz/TrabalhoMinMax/assets/162636656/51387809-b7b7-4c7b-b605-baedf15c80ae" width="700px"/> 
+<img src="https://github.com/JoaquimCruz/TrabalhoMinMax/assets/162636656/51387809-b7b7-4c7b-b605-baedf15c80ae" width="500px"/> 
+<img src="https://github.com/JoaquimCruz/TrabalhoMinMax/assets/162636656/6c24add9-9a23-44c2-9160-e6f7a61c6588" width="500px"/> 
+
 </p>
 
 <h1 align="center"/> Conclusão </h1>
@@ -167,9 +177,9 @@ De mesmo modo, a linha que representa a média das 10 execuções do MinMax3 com
 Apoś as análises dos gráficos, pode-se concluir que:
 </p>
 
-- Para vetores Aleatórios: Para vetores aleatórios o algorítimo MinMax1 possui o melhor e mais constante desempenho, enquanto o MinMax3 possui o pior desempenho;
-- Para vetores Ordenados: Para vetores ordenados, seja decrescentemente ou crescentemente, o algorítimo MinMax3 possui o melhor desempenho, enquando o MinMax1 possui o pior desempenho;
-- No geral, o algorítimo MinMax2 possui a maior constância, quando analisado os melhores, os casos médios e os piores casos. Ademais, possui a maior constância também com os 3 tipos de ordenação do vetor (crescente, decrescente e desordenado).
+- Para vetores Aleatórios: Para vetores aleatórios o algorítimo MinMax1 possui o melhor e mais constante desempenho;
+- Para vetores Ordenados: Para vetores ordenados, seja decrescentemente ou crescentemente, o algorítimo MinMax3 possui o melhor desempenho;
+- No geral, o algorítimo MinMax3 possui a maior constância, quando analisado os melhores, os casos médios e os piores casos. Ademais, possui a maior constância também com os 3 tipos de ordenação do vetor (crescente, decrescente e desordenado).
 
 
 
