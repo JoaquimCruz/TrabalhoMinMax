@@ -29,7 +29,6 @@ void MinMax :: Preenche_Vetor(vector<int> &vetor, int tamanho, int min, int max)
     }
 
 
-
 }
 
 void MinMax :: MinMax1(vector<int> &vetor, int max, int min){
